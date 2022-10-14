@@ -1,0 +1,66 @@
+.text-yellow {
+    color: #fff944;
+}
+
+.text-principal {
+    color: #3c8f9e;
+} 
+
+.bg-principal {
+    background-color: #3c8f9e;
+}
+
+.btn-principal {
+    outline: none;
+    color: #f4f4f2;
+    background-color:  #3c8f9e;
+    box-shadow: 0 0 0 0;
+}
+
+.btn-secundario {
+    outline: none;
+    color: #212529;
+    background-color:  #fff944;
+    box-shadow: 0 0 0 0;
+}
+
+.bg-darker {
+    background-color: #212529;
+}
+
+.master-text{
+    font-size: 5rem;
+}
+
+.color-overlay{ /* to position the text and control the bg-color */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.395); */
+    background-color: #212529;
+}
+
+.masthead{
+    background-size: cover; /* to move with the browser responsibly */
+    min-height: 90vh; /* the minimum height */
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+@media (max-width: 768px) { /* if media is lower than 768px then */
+    .masthead {
+        min-height: 30vh;
+    }
+    .master-text {
+        font-size: calc(1.525rem + 3.3vw); /* makes the math to perfectly fix the text */
+    }    
+}
+
+*, *::before, *::after{
+    font-family: 'Crimson Text', serif;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #3c8f9e;
+  }

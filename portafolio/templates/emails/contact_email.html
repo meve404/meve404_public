@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>agenTprop</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                background-color: #cccccc;
+            }
+            
+            .center{
+                text-align: center;
+            }
+
+            .btn-principal {
+                outline: none;
+                color: #f4f4f2;
+                background-color:  #3c8f9e;
+                box-shadow: 0 0 0 0;
+            }
+
+            .text-claro {
+                color: white;
+            }
+
+            .card{
+                background: white;
+                padding: 1rem;
+                border: 1px solid #dedede;
+                border-radius: .25rem;
+                max-width: 400px;
+            }
+
+            .card-header{
+                background: #3c8f9e;
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+            }
+
+            .card-body{
+                font-size: 1rem;
+                margin-bottom: .7rem;
+            }
+
+            .card-footer{
+                margin-top: 2rem;
+            }
+
+            .btn{
+                border: none;
+                font-size: 1rem;
+                padding: .5em .75em;
+                border-radius: .25em;
+                cursor: pointer;
+            }
+
+            .btn:hover, .btn:focus{
+                background: #f2f6f8;
+                color: #1D1E18;
+                border: 1px solid #8d8d8d;
+            }
+
+            .btn.btn-outline-secundario{
+                background: none;
+                border: 1px solid #fff944;
+            }
+
+            .btn-outline-secundario:hover, .btn.btn-outline-secundario:focus{
+                background: #f2f6f8;
+                color: #1D1E18;
+                border: 1px solid #8d8d8d;
+            }
+
+            .btn + .btn {
+                margin-left: .25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td align="center">
+                    <div class="card">
+                        <div class="card-header text-claro center">
+                            Contact form portafolio
+                        </div>
+                        <div class="card-body">
+                            <h2>Hi Miguel!,</h2> 
+                            <p>You are receiving this email because the contact form from the <strong>portafolio was submited</strong></p>
+                            <hr>
+                            <p><strong>Name or company:</strong> {{ Full_name }}</p>
+                            <p><strong>email:</strong> {{ email }}</p>
+                            <hr>
+                            <p><strong>Message:</strong> {{ contact_message }}</p>
+                        </div>
+                        <hr>
+                        <div class="cardfooter">
+                            <h3>Best regards, Meve404</h3>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>  
+</html>
